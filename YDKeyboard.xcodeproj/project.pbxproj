@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A8BD2BC2227CFDF00EC16C4 /* UIImage+YDKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BD2BB2227CFDF00EC16C4 /* UIImage+YDKeyboard.m */; };
+		5A9B3E802224E315005782CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3E7F2224E315005782CB /* AppDelegate.m */; };
+		5A9B3E832224E315005782CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3E822224E315005782CB /* ViewController.m */; };
+		5A9B3E862224E315005782CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B3E842224E315005782CB /* Main.storyboard */; };
+		5A9B3E882224E316005782CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B3E872224E316005782CB /* Assets.xcassets */; };
+		5A9B3E8B2224E316005782CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B3E892224E316005782CB /* LaunchScreen.storyboard */; };
+		5A9B3E8E2224E316005782CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3E8D2224E316005782CB /* main.m */; };
+		5A9B3E9C2224E3FD005782CB /* UITextField+YDKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3E9B2224E3FD005782CB /* UITextField+YDKeyboard.m */; };
+		5A9B3E9F2224E412005782CB /* UITextView+YDKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3E9E2224E412005782CB /* UITextView+YDKeyboard.m */; };
+		5A9B3EA22224E440005782CB /* YDKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EA12224E440005782CB /* YDKeyboardView.m */; };
+		5A9B3EA5222525B1005782CB /* YDNumberKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EA4222525B1005782CB /* YDNumberKeyboardView.m */; };
+		5A9B3EA922253019005782CB /* YDDeviceTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EA822253019005782CB /* YDDeviceTypes.m */; };
+		5A9B3EAC22255313005782CB /* YDAlphabetKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EAB22255313005782CB /* YDAlphabetKeyboardView.m */; };
+		5A9B3EAF2225534D005782CB /* YDSymbolKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EAE2225534D005782CB /* YDSymbolKeyboardView.m */; };
+		5AA516FC22262C7000AD7E60 /* keyboard_delete_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516E322262C6F00AD7E60 /* keyboard_delete_key.png */; };
+		5AA516FF22262C7000AD7E60 /* keyboard_shift_key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516E622262C6F00AD7E60 /* keyboard_shift_key@2x.png */; };
+		5AA5170022262C7000AD7E60 /* keyboard_shift_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516E722262C6F00AD7E60 /* keyboard_shift_key.png */; };
+		5AA5170222262C7000AD7E60 /* keyboard_num_delete_key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516E922262C7000AD7E60 /* keyboard_num_delete_key@2x.png */; };
+		5AA5170722262C7000AD7E60 /* keyboard_num_delete_key@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516EE22262C7000AD7E60 /* keyboard_num_delete_key@3x.png */; };
+		5AA5170922262C7100AD7E60 /* keyboard_delete_key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516F022262C7000AD7E60 /* keyboard_delete_key@2x.png */; };
+		5AA5170A22262C7100AD7E60 /* keyboard_shift_key@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516F122262C7000AD7E60 /* keyboard_shift_key@3x.png */; };
+		5AA5170E22262C7100AD7E60 /* keyboard_num_delete_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516F522262C7000AD7E60 /* keyboard_num_delete_key.png */; };
+		5AA5171022262C7100AD7E60 /* keyboard_delete_key@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA516F722262C7000AD7E60 /* keyboard_delete_key@3x.png */; };
+		62049F68222B8DD000B14C7D /* YDNumberKeyboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62049F67222B8DD000B14C7D /* YDNumberKeyboardViewModel.m */; };
+		62049F6B222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62049F6A222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.m */; };
+		62049F71222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62049F6F222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.m */; };
+		62049F74222BB08B00B14C7D /* YDKeyboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62049F73222BB08B00B14C7D /* YDKeyboardViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A8BD2BA2227CFDF00EC16C4 /* UIImage+YDKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YDKeyboard.h"; sourceTree = "<group>"; };
+		5A8BD2BB2227CFDF00EC16C4 /* UIImage+YDKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YDKeyboard.m"; sourceTree = "<group>"; };
+		5A9B3E7B2224E315005782CB /* YDKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9B3E7E2224E315005782CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A9B3E7F2224E315005782CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A9B3E812224E315005782CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A9B3E822224E315005782CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A9B3E852224E315005782CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A9B3E872224E316005782CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A9B3E8A2224E316005782CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A9B3E8C2224E316005782CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9B3E8D2224E316005782CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A9B3E982224E3B1005782CB /* YDKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKeyboard.h; sourceTree = "<group>"; };
+		5A9B3E992224E3D5005782CB /* YDKeyboardHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKeyboardHeader.h; sourceTree = "<group>"; };
+		5A9B3E9A2224E3FD005782CB /* UITextField+YDKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+YDKeyboard.h"; sourceTree = "<group>"; };
+		5A9B3E9B2224E3FD005782CB /* UITextField+YDKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+YDKeyboard.m"; sourceTree = "<group>"; };
+		5A9B3E9D2224E412005782CB /* UITextView+YDKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+YDKeyboard.h"; sourceTree = "<group>"; };
+		5A9B3E9E2224E412005782CB /* UITextView+YDKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YDKeyboard.m"; sourceTree = "<group>"; };
+		5A9B3EA02224E440005782CB /* YDKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKeyboardView.h; sourceTree = "<group>"; };
+		5A9B3EA12224E440005782CB /* YDKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDKeyboardView.m; sourceTree = "<group>"; };
+		5A9B3EA3222525B1005782CB /* YDNumberKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNumberKeyboardView.h; sourceTree = "<group>"; };
+		5A9B3EA4222525B1005782CB /* YDNumberKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNumberKeyboardView.m; sourceTree = "<group>"; };
+		5A9B3EA722253019005782CB /* YDDeviceTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDeviceTypes.h; sourceTree = "<group>"; };
+		5A9B3EA822253019005782CB /* YDDeviceTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDeviceTypes.m; sourceTree = "<group>"; };
+		5A9B3EAA22255313005782CB /* YDAlphabetKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAlphabetKeyboardView.h; sourceTree = "<group>"; };
+		5A9B3EAB22255313005782CB /* YDAlphabetKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAlphabetKeyboardView.m; sourceTree = "<group>"; };
+		5A9B3EAD2225534D005782CB /* YDSymbolKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSymbolKeyboardView.h; sourceTree = "<group>"; };
+		5A9B3EAE2225534D005782CB /* YDSymbolKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSymbolKeyboardView.m; sourceTree = "<group>"; };
+		5AA516E322262C6F00AD7E60 /* keyboard_delete_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_delete_key.png; sourceTree = "<group>"; };
+		5AA516E622262C6F00AD7E60 /* keyboard_shift_key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_shift_key@2x.png"; sourceTree = "<group>"; };
+		5AA516E722262C6F00AD7E60 /* keyboard_shift_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_shift_key.png; sourceTree = "<group>"; };
+		5AA516E922262C7000AD7E60 /* keyboard_num_delete_key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_num_delete_key@2x.png"; sourceTree = "<group>"; };
+		5AA516EE22262C7000AD7E60 /* keyboard_num_delete_key@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_num_delete_key@3x.png"; sourceTree = "<group>"; };
+		5AA516F022262C7000AD7E60 /* keyboard_delete_key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete_key@2x.png"; sourceTree = "<group>"; };
+		5AA516F122262C7000AD7E60 /* keyboard_shift_key@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_shift_key@3x.png"; sourceTree = "<group>"; };
+		5AA516F522262C7000AD7E60 /* keyboard_num_delete_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_num_delete_key.png; sourceTree = "<group>"; };
+		5AA516F722262C7000AD7E60 /* keyboard_delete_key@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete_key@3x.png"; sourceTree = "<group>"; };
+		62049F66222B8DD000B14C7D /* YDNumberKeyboardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNumberKeyboardViewModel.h; sourceTree = "<group>"; };
+		62049F67222B8DD000B14C7D /* YDNumberKeyboardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNumberKeyboardViewModel.m; sourceTree = "<group>"; };
+		62049F69222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAlphabetKeyboardViewModel.h; sourceTree = "<group>"; };
+		62049F6A222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAlphabetKeyboardViewModel.m; sourceTree = "<group>"; };
+		62049F6F222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSymbolKeyboardViewModel.m; sourceTree = "<group>"; };
+		62049F70222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSymbolKeyboardViewModel.h; sourceTree = "<group>"; };
+		62049F72222BB08B00B14C7D /* YDKeyboardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKeyboardViewModel.h; sourceTree = "<group>"; };
+		62049F73222BB08B00B14C7D /* YDKeyboardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDKeyboardViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A9B3E782224E315005782CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A9B3E722224E315005782CB = {
+			isa = PBXGroup;
+			children = (
+				5A9B3E7D2224E315005782CB /* YDKeyboard */,
+				5A9B3E7C2224E315005782CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A9B3E7C2224E315005782CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B3E7B2224E315005782CB /* YDKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A9B3E7D2224E315005782CB /* YDKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B3E942224E31C005782CB /* YDKeyboard */,
+				5A9B3E7E2224E315005782CB /* AppDelegate.h */,
+				5A9B3E7F2224E315005782CB /* AppDelegate.m */,
+				5A9B3E812224E315005782CB /* ViewController.h */,
+				5A9B3E822224E315005782CB /* ViewController.m */,
+				5A9B3E842224E315005782CB /* Main.storyboard */,
+				5A9B3E872224E316005782CB /* Assets.xcassets */,
+				5A9B3E892224E316005782CB /* LaunchScreen.storyboard */,
+				5A9B3E8C2224E316005782CB /* Info.plist */,
+				5A9B3E8D2224E316005782CB /* main.m */,
+			);
+			path = YDKeyboard;
+			sourceTree = "<group>";
+		};
+		5A9B3E942224E31C005782CB /* YDKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B3E972224E37D005782CB /* Header */,
+				5A9B3EA622252FB0005782CB /* Foundation */,
+				5A9B3E962224E330005782CB /* Extension */,
+				5AA516E122262BF800AD7E60 /* Resources */,
+				62049F65222B8BF800B14C7D /* ViewModel */,
+				5A9B3E952224E32A005782CB /* View */,
+			);
+			path = YDKeyboard;
+			sourceTree = "<group>";
+		};
+		5A9B3E952224E32A005782CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B3EA02224E440005782CB /* YDKeyboardView.h */,
+				5A9B3EA12224E440005782CB /* YDKeyboardView.m */,
+				5A9B3EA3222525B1005782CB /* YDNumberKeyboardView.h */,
+				5A9B3EA4222525B1005782CB /* YDNumberKeyboardView.m */,
+				5A9B3EAA22255313005782CB /* YDAlphabetKeyboardView.h */,
+				5A9B3EAB22255313005782CB /* YDAlphabetKeyboardView.m */,
+				5A9B3EAD2225534D005782CB /* YDSymbolKeyboardView.h */,
+				5A9B3EAE2225534D005782CB /* YDSymbolKeyboardView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A9B3E962224E330005782CB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B3E9A2224E3FD005782CB /* UITextField+YDKeyboard.h */,
+				5A9B3E9B2224E3FD005782CB /* UITextField+YDKeyboard.m */,
+				5A9B3E9D2224E412005782CB /* UITextView+YDKeyboard.h */,
+				5A9B3E9E2224E412005782CB /* UITextView+YDKeyboard.m */,
+				5A8BD2BA2227CFDF00EC16C4 /* UIImage+YDKeyboard.h */,
+				5A8BD2BB2227CFDF00EC16C4 /* UIImage+YDKeyboard.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5A9B3E972224E37D005782CB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B3E982224E3B1005782CB /* YDKeyboard.h */,
+				5A9B3E992224E3D5005782CB /* YDKeyboardHeader.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5A9B3EA622252FB0005782CB /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B3EA722253019005782CB /* YDDeviceTypes.h */,
+				5A9B3EA822253019005782CB /* YDDeviceTypes.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		5AA516E122262BF800AD7E60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AA516E322262C6F00AD7E60 /* keyboard_delete_key.png */,
+				5AA516F022262C7000AD7E60 /* keyboard_delete_key@2x.png */,
+				5AA516F722262C7000AD7E60 /* keyboard_delete_key@3x.png */,
+				5AA516F522262C7000AD7E60 /* keyboard_num_delete_key.png */,
+				5AA516E922262C7000AD7E60 /* keyboard_num_delete_key@2x.png */,
+				5AA516EE22262C7000AD7E60 /* keyboard_num_delete_key@3x.png */,
+				5AA516E722262C6F00AD7E60 /* keyboard_shift_key.png */,
+				5AA516E622262C6F00AD7E60 /* keyboard_shift_key@2x.png */,
+				5AA516F122262C7000AD7E60 /* keyboard_shift_key@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62049F65222B8BF800B14C7D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62049F66222B8DD000B14C7D /* YDNumberKeyboardViewModel.h */,
+				62049F67222B8DD000B14C7D /* YDNumberKeyboardViewModel.m */,
+				62049F69222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.h */,
+				62049F6A222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.m */,
+				62049F70222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.h */,
+				62049F6F222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.m */,
+				62049F72222BB08B00B14C7D /* YDKeyboardViewModel.h */,
+				62049F73222BB08B00B14C7D /* YDKeyboardViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A9B3E7A2224E315005782CB /* YDKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A9B3E912224E316005782CB /* Build configuration list for PBXNativeTarget "YDKeyboard" */;
+			buildPhases = (
+				5A9B3E772224E315005782CB /* Sources */,
+				5A9B3E782224E315005782CB /* Frameworks */,
+				5A9B3E792224E315005782CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDKeyboard;
+			productName = YDKeyboard;
+			productReference = 5A9B3E7B2224E315005782CB /* YDKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A9B3E732224E315005782CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wuyezhiguhun;
+				TargetAttributes = {
+					5A9B3E7A2224E315005782CB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 5A9B3E762224E315005782CB /* Build configuration list for PBXProject "YDKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A9B3E722224E315005782CB;
+			productRefGroup = 5A9B3E7C2224E315005782CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A9B3E7A2224E315005782CB /* YDKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A9B3E792224E315005782CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9B3E8B2224E316005782CB /* LaunchScreen.storyboard in Resources */,
+				5A9B3E882224E316005782CB /* Assets.xcassets in Resources */,
+				5A9B3E862224E315005782CB /* Main.storyboard in Resources */,
+				5AA5170E22262C7100AD7E60 /* keyboard_num_delete_key.png in Resources */,
+				5AA516FF22262C7000AD7E60 /* keyboard_shift_key@2x.png in Resources */,
+				5AA5170022262C7000AD7E60 /* keyboard_shift_key.png in Resources */,
+				5AA5170922262C7100AD7E60 /* keyboard_delete_key@2x.png in Resources */,
+				5AA5171022262C7100AD7E60 /* keyboard_delete_key@3x.png in Resources */,
+				5AA516FC22262C7000AD7E60 /* keyboard_delete_key.png in Resources */,
+				5AA5170722262C7000AD7E60 /* keyboard_num_delete_key@3x.png in Resources */,
+				5AA5170222262C7000AD7E60 /* keyboard_num_delete_key@2x.png in Resources */,
+				5AA5170A22262C7100AD7E60 /* keyboard_shift_key@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A9B3E772224E315005782CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9B3EAF2225534D005782CB /* YDSymbolKeyboardView.m in Sources */,
+				62049F68222B8DD000B14C7D /* YDNumberKeyboardViewModel.m in Sources */,
+				5A9B3E9F2224E412005782CB /* UITextView+YDKeyboard.m in Sources */,
+				5A9B3E832224E315005782CB /* ViewController.m in Sources */,
+				5A9B3E8E2224E316005782CB /* main.m in Sources */,
+				5A9B3E802224E315005782CB /* AppDelegate.m in Sources */,
+				62049F6B222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.m in Sources */,
+				62049F74222BB08B00B14C7D /* YDKeyboardViewModel.m in Sources */,
+				5A9B3EA922253019005782CB /* YDDeviceTypes.m in Sources */,
+				62049F71222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.m in Sources */,
+				5A9B3EA5222525B1005782CB /* YDNumberKeyboardView.m in Sources */,
+				5A9B3EA22224E440005782CB /* YDKeyboardView.m in Sources */,
+				5A8BD2BC2227CFDF00EC16C4 /* UIImage+YDKeyboard.m in Sources */,
+				5A9B3E9C2224E3FD005782CB /* UITextField+YDKeyboard.m in Sources */,
+				5A9B3EAC22255313005782CB /* YDAlphabetKeyboardView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A9B3E842224E315005782CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9B3E852224E315005782CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A9B3E892224E316005782CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9B3E8A2224E316005782CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A9B3E8F2224E316005782CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A9B3E902224E316005782CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A9B3E922224E316005782CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				INFOPLIST_FILE = YDKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weixin.wuyezhiguhun.YDKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A9B3E932224E316005782CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				INFOPLIST_FILE = YDKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weixin.wuyezhiguhun.YDKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A9B3E762224E315005782CB /* Build configuration list for PBXProject "YDKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9B3E8F2224E316005782CB /* Debug */,
+				5A9B3E902224E316005782CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A9B3E912224E316005782CB /* Build configuration list for PBXNativeTarget "YDKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9B3E922224E316005782CB /* Debug */,
+				5A9B3E932224E316005782CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A9B3E732224E315005782CB /* Project object */;
+}
