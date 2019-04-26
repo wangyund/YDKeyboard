@@ -129,10 +129,12 @@
         button.layer.masksToBounds = YES;
         
         if (i == 19) {
-            [button setImage:[UIImage imageNamed:@"keyboard_shift_key"] forState:UIControlStateNormal];
+            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"keyboard_shift_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+//            [button setImage:[UIImage imageNamed:@"keyboard_shift_key"] forState:UIControlStateNormal];
         }
         if (i == 27) {
-            [button setImage:[UIImage imageNamed:@"keyboard_delete_key"] forState:UIControlStateNormal];
+            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"keyboard_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+//            [button setImage:[UIImage imageNamed:@"keyboard_delete_key"] forState:UIControlStateNormal];
         }
         if (i == 19 || i == 27 || i == 28 || i == 30) {
             [button setBackgroundImage:[UIImage yd_imageWithColor:[UIColor colorWithRed:170.0 / 255.0 green:178.0 / 255.0 blue:190.0 / 255.0 alpha:1.0]] forState:UIControlStateNormal];

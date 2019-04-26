@@ -73,7 +73,8 @@
         button.layer.masksToBounds = YES;
         
         if (i == [kNumberList count] - 1) {
-            [button setImage:[UIImage imageNamed:@"keyboard_num_delete_key"] forState:UIControlStateNormal];
+            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"keyboard_num_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+//            [button setImage:[[UIImage imageNamed:@"keyboard_num_delete_key"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         }
         if (i == 9 || i == 11) {
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

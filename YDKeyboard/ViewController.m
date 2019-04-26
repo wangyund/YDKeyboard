@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.textField setYDKeyboardType:YDKeyboardTypeNumber];
-    [self.textView setYDKeyboardType:YDKeyboardTypeAlphabet];
+    [self.textField yd_setKeyboardType:YDKeyboardTypeNumber];
+    [self.textView yd_setKeyboardType:YDKeyboardTypeAlphabet];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
