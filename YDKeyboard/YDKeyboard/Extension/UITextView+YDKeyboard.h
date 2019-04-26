@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 设置自定义键盘类型
  * @pram type 自定义键盘类型
  */
-- (void)setYDKeyboardType:(YDKeyboardType)type;
+- (void)yd_setKeyboardType:(YDKeyboardType)type;
 
 @end
 

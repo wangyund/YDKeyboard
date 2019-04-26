@@ -19,7 +19,7 @@
  * 设置自定义键盘类型
  * @pram type 自定义键盘类型
  */
-- (void)setYDKeyboardType:(YDKeyboardType)type {
+- (void)yd_setKeyboardType:(YDKeyboardType)type {
     YDKeyboardView *keyboaardView = [[YDKeyboardView alloc] initWithType:type];
     keyboaardView.delegate = self;
     self.inputView = keyboaardView;

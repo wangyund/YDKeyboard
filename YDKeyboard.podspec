@@ -35,6 +35,7 @@ Pod::Spec.new do |s|
   s.subspec 'View' do |ss|
      ss.public_header_files = 'YDKeyboard/YDKeyboard/View/*.{h}'
      ss.source_files = 'YDKeyboard/YDKeyboard/View/*.{h,m}'
+     s.resources = 'YDKeyboard/YDKeyboard/Resources/*.{png}'
   end
 
 
