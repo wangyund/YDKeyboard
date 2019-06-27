@@ -86,7 +86,8 @@
         
 
         if (i == 28) {
-            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"keyboard_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+            
+            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"YDKeyboard" ofType:@"bundle"]] pathForResource:@"keyboard_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
 //            [button setImage:[UIImage imageNamed:@"keyboard_delete_key"] forState:UIControlStateNormal];
         }
         if (i == 28 || i == 29 || i == 37) {

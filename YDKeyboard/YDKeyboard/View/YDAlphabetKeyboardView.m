@@ -129,11 +129,11 @@
         button.layer.masksToBounds = YES;
         
         if (i == 19) {
-            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"keyboard_shift_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"YDKeyboard" ofType:@"bundle"]] pathForResource:@"keyboard_shift_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
 //            [button setImage:[UIImage imageNamed:@"keyboard_shift_key"] forState:UIControlStateNormal];
         }
         if (i == 27) {
-            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"keyboard_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+            [button setImage:[[UIImage imageWithContentsOfFile:[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"YDKeyboard" ofType:@"bundle"]] pathForResource:@"keyboard_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
 //            [button setImage:[UIImage imageNamed:@"keyboard_delete_key"] forState:UIControlStateNormal];
         }
         if (i == 19 || i == 27 || i == 28 || i == 30) {
