@@ -75,6 +75,7 @@
         if (i == [kNumberList count] - 1) {
 //            NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[YDNumberKeyboardView class]] pathForResource:@"YDKeyboard" ofType:@"bundle"]];
 //            [button setImage:[[UIImage imageWithContentsOfFile:[bundle pathForResource:@"keyboard_num_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+            
             [button setImage:[[UIImage imageNamed:@"keyboard_num_delete_key"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         }
         if (i == 9 || i == 11) {
