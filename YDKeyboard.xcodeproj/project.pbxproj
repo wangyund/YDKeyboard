@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A31E62522E83D8C00A728FC /* keyboard_delete_key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E61C22E83D8C00A728FC /* keyboard_delete_key@2x.png */; };
+		5A31E62622E83D8C00A728FC /* keyboard_delete_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E61D22E83D8C00A728FC /* keyboard_delete_key.png */; };
+		5A31E62722E83D8C00A728FC /* keyboard_num_delete_key@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E61E22E83D8C00A728FC /* keyboard_num_delete_key@3x.png */; };
+		5A31E62822E83D8C00A728FC /* keyboard_num_delete_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E61F22E83D8C00A728FC /* keyboard_num_delete_key.png */; };
+		5A31E62922E83D8C00A728FC /* keyboard_shift_key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E62022E83D8C00A728FC /* keyboard_shift_key@2x.png */; };
+		5A31E62A22E83D8C00A728FC /* keyboard_shift_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E62122E83D8C00A728FC /* keyboard_shift_key.png */; };
+		5A31E62B22E83D8C00A728FC /* keyboard_shift_key@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E62222E83D8C00A728FC /* keyboard_shift_key@3x.png */; };
+		5A31E62C22E83D8C00A728FC /* keyboard_delete_key@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E62322E83D8C00A728FC /* keyboard_delete_key@3x.png */; };
+		5A31E62D22E83D8C00A728FC /* keyboard_num_delete_key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A31E62422E83D8C00A728FC /* keyboard_num_delete_key@2x.png */; };
 		5A8BD2BC2227CFDF00EC16C4 /* UIImage+YDKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BD2BB2227CFDF00EC16C4 /* UIImage+YDKeyboard.m */; };
 		5A9B3E802224E315005782CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3E7F2224E315005782CB /* AppDelegate.m */; };
 		5A9B3E832224E315005782CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3E822224E315005782CB /* ViewController.m */; };
@@ -21,7 +30,6 @@
 		5A9B3EA922253019005782CB /* YDDeviceTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EA822253019005782CB /* YDDeviceTypes.m */; };
 		5A9B3EAC22255313005782CB /* YDAlphabetKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EAB22255313005782CB /* YDAlphabetKeyboardView.m */; };
 		5A9B3EAF2225534D005782CB /* YDSymbolKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B3EAE2225534D005782CB /* YDSymbolKeyboardView.m */; };
-		5AC79F2622E80F9300A1A77A /* YDKeyboard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5AC79F2522E80F9300A1A77A /* YDKeyboard.bundle */; };
 		62049F68222B8DD000B14C7D /* YDNumberKeyboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62049F67222B8DD000B14C7D /* YDNumberKeyboardViewModel.m */; };
 		62049F6B222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62049F6A222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.m */; };
 		62049F71222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62049F6F222B8E4C00B14C7D /* YDSymbolKeyboardViewModel.m */; };
@@ -29,6 +37,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A31E61C22E83D8C00A728FC /* keyboard_delete_key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete_key@2x.png"; sourceTree = "<group>"; };
+		5A31E61D22E83D8C00A728FC /* keyboard_delete_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_delete_key.png; sourceTree = "<group>"; };
+		5A31E61E22E83D8C00A728FC /* keyboard_num_delete_key@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_num_delete_key@3x.png"; sourceTree = "<group>"; };
+		5A31E61F22E83D8C00A728FC /* keyboard_num_delete_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_num_delete_key.png; sourceTree = "<group>"; };
+		5A31E62022E83D8C00A728FC /* keyboard_shift_key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_shift_key@2x.png"; sourceTree = "<group>"; };
+		5A31E62122E83D8C00A728FC /* keyboard_shift_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_shift_key.png; sourceTree = "<group>"; };
+		5A31E62222E83D8C00A728FC /* keyboard_shift_key@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_shift_key@3x.png"; sourceTree = "<group>"; };
+		5A31E62322E83D8C00A728FC /* keyboard_delete_key@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete_key@3x.png"; sourceTree = "<group>"; };
+		5A31E62422E83D8C00A728FC /* keyboard_num_delete_key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_num_delete_key@2x.png"; sourceTree = "<group>"; };
 		5A8BD2BA2227CFDF00EC16C4 /* UIImage+YDKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YDKeyboard.h"; sourceTree = "<group>"; };
 		5A8BD2BB2227CFDF00EC16C4 /* UIImage+YDKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YDKeyboard.m"; sourceTree = "<group>"; };
 		5A9B3E7B2224E315005782CB /* YDKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +74,6 @@
 		5A9B3EAB22255313005782CB /* YDAlphabetKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAlphabetKeyboardView.m; sourceTree = "<group>"; };
 		5A9B3EAD2225534D005782CB /* YDSymbolKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSymbolKeyboardView.h; sourceTree = "<group>"; };
 		5A9B3EAE2225534D005782CB /* YDSymbolKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSymbolKeyboardView.m; sourceTree = "<group>"; };
-		5AC79F2522E80F9300A1A77A /* YDKeyboard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YDKeyboard.bundle; sourceTree = "<group>"; };
 		62049F66222B8DD000B14C7D /* YDNumberKeyboardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNumberKeyboardViewModel.h; sourceTree = "<group>"; };
 		62049F67222B8DD000B14C7D /* YDNumberKeyboardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNumberKeyboardViewModel.m; sourceTree = "<group>"; };
 		62049F69222B8DEE00B14C7D /* YDAlphabetKeyboardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAlphabetKeyboardViewModel.h; sourceTree = "<group>"; };
@@ -174,7 +190,15 @@
 		5AA516E122262BF800AD7E60 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5AC79F2522E80F9300A1A77A /* YDKeyboard.bundle */,
+				5A31E61D22E83D8C00A728FC /* keyboard_delete_key.png */,
+				5A31E61C22E83D8C00A728FC /* keyboard_delete_key@2x.png */,
+				5A31E62322E83D8C00A728FC /* keyboard_delete_key@3x.png */,
+				5A31E61F22E83D8C00A728FC /* keyboard_num_delete_key.png */,
+				5A31E62422E83D8C00A728FC /* keyboard_num_delete_key@2x.png */,
+				5A31E61E22E83D8C00A728FC /* keyboard_num_delete_key@3x.png */,
+				5A31E62122E83D8C00A728FC /* keyboard_shift_key.png */,
+				5A31E62022E83D8C00A728FC /* keyboard_shift_key@2x.png */,
+				5A31E62222E83D8C00A728FC /* keyboard_shift_key@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -253,8 +277,16 @@
 			files = (
 				5A9B3E8B2224E316005782CB /* LaunchScreen.storyboard in Resources */,
 				5A9B3E882224E316005782CB /* Assets.xcassets in Resources */,
+				5A31E62722E83D8C00A728FC /* keyboard_num_delete_key@3x.png in Resources */,
+				5A31E62622E83D8C00A728FC /* keyboard_delete_key.png in Resources */,
+				5A31E62922E83D8C00A728FC /* keyboard_shift_key@2x.png in Resources */,
+				5A31E62B22E83D8C00A728FC /* keyboard_shift_key@3x.png in Resources */,
+				5A31E62522E83D8C00A728FC /* keyboard_delete_key@2x.png in Resources */,
+				5A31E62A22E83D8C00A728FC /* keyboard_shift_key.png in Resources */,
+				5A31E62822E83D8C00A728FC /* keyboard_num_delete_key.png in Resources */,
+				5A31E62D22E83D8C00A728FC /* keyboard_num_delete_key@2x.png in Resources */,
 				5A9B3E862224E315005782CB /* Main.storyboard in Resources */,
-				5AC79F2622E80F9300A1A77A /* YDKeyboard.bundle in Resources */,
+				5A31E62C22E83D8C00A728FC /* keyboard_delete_key@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

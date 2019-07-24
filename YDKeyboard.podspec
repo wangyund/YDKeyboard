@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   
   s.public_header_files = 'YDKeyboard/YDKeyboard/Header/*.{h}'
   s.source_files = 'YDKeyboard/YDKeyboard/Header/*.{h,m}'
-  s.resources = 'YDKeyboard/YDKeyboard/Resources/YDKeyboard.bundle'
+  s.resources = 'YDKeyboard/YDKeyboard/Resources/*.{png}'
   s.requires_arc = true
   s.frameworks = 'UIKit','Foundation'
 
