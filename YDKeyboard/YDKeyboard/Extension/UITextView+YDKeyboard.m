@@ -29,12 +29,12 @@
 #pragma mark --- YDKeyboardViewDelegate ---
 - (void)keyboardViewAddKey:(NSString *)key {
     self.text = [NSString stringWithFormat:@"%@%@",self.text,key];
-    [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:self];
+    [[NSNotificationCenter defaultCenter] postNotificationName:UITextViewTextDidChangeNotification object:self];
 }
 - (void)keyboardViewRemoveKey {
     if ([self.text length] > 0) {
         self.text = [self.text substringToIndex:[self.text length] - 1];
-        [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:self];
+        [[NSNotificationCenter defaultCenter] postNotificationName:UITextViewTextDidChangeNotification object:self];
     }
 }
 - (void)keyboardViewEndEditing {
