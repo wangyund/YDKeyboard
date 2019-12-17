@@ -28,8 +28,9 @@
 /**
  * 初始化键盘
  * @pram type 初始化键盘类型
+ * @pram title 键盘标题
  */
-- (instancetype)initWithType:(YDKeyboardType)type {
+- (instancetype)initWithType:(YDKeyboardType)type title:(NSString *)title {
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     CGRect frame;
     if(UIDeviceOrientationIsLandscape(orientation)){
@@ -70,6 +71,7 @@
                 break;
         }
     }
+    self.keyboardLabel.text = title;
     
     return self;
 }

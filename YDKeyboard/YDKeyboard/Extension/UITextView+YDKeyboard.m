@@ -18,19 +18,24 @@
 /**
  * 设置自定义键盘类型
  * @pram type 自定义键盘类型
+ * @pram title 自定义软键盘标题
  */
-- (void)yd_setKeyboardType:(YDKeyboardType)type {
-    YDKeyboardView *keyboaardView = [[YDKeyboardView alloc] initWithType:type];
+- (void)yd_setKeyboardType:(YDKeyboardType)type title:(NSString *)title {
+    YDKeyboardView *keyboaardView = [[YDKeyboardView alloc] initWithType:type title:title];
     keyboaardView.delegate = self;
     self.inputView = keyboaardView;
 }
 
 #pragma mark --- YDKeyboardViewDelegate ---
 - (void)keyboardViewAddKey:(NSString *)key {
-    
+    self.text = [NSString stringWithFormat:@"%@%@",self.text,key];
+    [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:self];
 }
 - (void)keyboardViewRemoveKey {
-    
+    if ([self.text length] > 0) {
+        self.text = [self.text substringToIndex:[self.text length] - 1];
+        [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:self];
+    }
 }
 - (void)keyboardViewEndEditing {
     [self endEditing:YES];

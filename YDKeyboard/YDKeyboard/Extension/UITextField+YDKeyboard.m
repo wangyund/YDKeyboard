@@ -19,9 +19,10 @@
 /**
  * 设置自定义键盘类型
  * @pram type 自定义键盘类型
+ * @pram title 自定义键盘标题
  */
-- (void)yd_setKeyboardType:(YDKeyboardType)type {
-    YDKeyboardView *keyboaardView = [[YDKeyboardView alloc] initWithType:type];
+- (void)yd_setKeyboardType:(YDKeyboardType)type title:(NSString *)title {
+    YDKeyboardView *keyboaardView = [[YDKeyboardView alloc] initWithType:type title:title];
     keyboaardView.delegate = self;
     self.inputView = keyboaardView;
 }

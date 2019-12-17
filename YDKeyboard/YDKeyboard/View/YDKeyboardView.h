@@ -23,11 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YDKeyboardView : UIView
 @property (nonatomic, weak) id<YDKeyboardViewDelegate> delegate;
+
 /**
  * 初始化键盘
  * @pram type 初始化键盘类型
+ * @pram title 键盘标题
  */
-- (instancetype)initWithType:(YDKeyboardType)type;
+- (instancetype)initWithType:(YDKeyboardType)type title:(NSString *)title;
 
 @end
 
