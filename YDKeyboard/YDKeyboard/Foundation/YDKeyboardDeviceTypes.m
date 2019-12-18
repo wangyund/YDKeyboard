@@ -6,10 +6,10 @@
 //  Copyright © 2019年 wuyezhiguhun. All rights reserved.
 //
 
-#import "YDDeviceTypes.h"
+#import "YDKeyboardDeviceTypes.h"
 #import "sys/utsname.h"
 
-@implementation YDDeviceTypes
+@implementation YDKeyboardDeviceTypes
 
 /** 获取iPhone设备类型 */
 + (YDiPhoneType)getiPhoneType {
@@ -19,90 +19,90 @@
     NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     
     if ([deviceString isEqualToString:@"iPhone1,1"]) {
-        return YDiPhoneTypeiPhone;
+        return YDKeyboardiPhoneTypeiPhone;
     }
     
     if ([deviceString isEqualToString:@"iPhone1,2"]) {
-        return YDiPhoneTypeiPhone3G;
+        return YDKeyboardiPhoneTypeiPhone3G;
     }
     
     if ([deviceString isEqualToString:@"iPhone2,1"]) {
-        return YDiPhoneTypeiPhone3GS;
+        return YDKeyboardiPhoneTypeiPhone3GS;
     }
     
     if ([deviceString isEqualToString:@"iPhone3,1"] || [deviceString isEqualToString:@"iPhone3,2"] || [deviceString isEqualToString:@"iPhone3,3"]) {
-        return YDiPhoneTypeiPhone4;
+        return YDKeyboardiPhoneTypeiPhone4;
     }
     
     if ([deviceString isEqualToString:@"iPhone4,1"]) {
-        return YDiPhoneTypeiPhone4S;
+        return YDKeyboardiPhoneTypeiPhone4S;
     }
     
     if ([deviceString isEqualToString:@"iPhone5,1"] || [deviceString isEqualToString:@"iPhone5,2"]) {
-        return YDiPhoneTypeiPhone5;
+        return YDKeyboardiPhoneTypeiPhone5;
     }
     
     if ([deviceString isEqualToString:@"iPhone5,3"] || [deviceString isEqualToString:@"iPhone5,4"]) {
-        return YDiPhoneTypeiPhone5C;
+        return YDKeyboardiPhoneTypeiPhone5C;
     }
     
     if ([deviceString isEqualToString:@"iPhone5,1"] || [deviceString isEqualToString:@"iPhone6,2"]) {
-        return YDiPhoneTypeiPhone5S;
+        return YDKeyboardiPhoneTypeiPhone5S;
     }
     
     if ([deviceString isEqualToString:@"iPhone7,2"]) {
-        return YDiPhoneTypeiPhone6;
+        return YDKeyboardiPhoneTypeiPhone6;
     }
     
     if ([deviceString isEqualToString:@"iPhone7,1"]) {
-        return YDiPhoneTypeiPhone6Plus;
+        return YDKeyboardiPhoneTypeiPhone6Plus;
     }
     
     if ([deviceString isEqualToString:@"iPhone8,1"]) {
-        return YDiPhoneTypeiPhone6s;
+        return YDKeyboardiPhoneTypeiPhone6s;
     }
     
     if ([deviceString isEqualToString:@"iPhone8,2"]) {
-        return YDiPhoneTypeiPhone6sPlus;
+        return YDKeyboardiPhoneTypeiPhone6sPlus;
     }
     
     if ([deviceString isEqualToString:@"iPhone8,4"]) {
-        return YDiPhoneTypeiPhoneSE;
+        return YDKeyboardiPhoneTypeiPhoneSE;
     }
     
     if ([deviceString isEqualToString:@"iPhone9,1"] || [deviceString isEqualToString:@"iPhone9,3"]) {
-        return YDiPhoneTypeiPhone7;
+        return YDKeyboardiPhoneTypeiPhone7;
     }
     
     if ([deviceString isEqualToString:@"iPhone9,2"] || [deviceString isEqualToString:@"iPhone9,4"]) {
-        return YDiPhoneTypeiPhone7Plus;
+        return YDKeyboardiPhoneTypeiPhone7Plus;
     }
     
     if ([deviceString isEqualToString:@"iPhone10,1"] || [deviceString isEqualToString:@"iPhone10,4"]) {
-        return YDiPhoneTypeiPhone8;
+        return YDKeyboardiPhoneTypeiPhone8;
     }
     
     if ([deviceString isEqualToString:@"iPhone10,2"] || [deviceString isEqualToString:@"iPhone10,5"]) {
-        return YDiPhoneTypeiPhone8Plus;
+        return YDKeyboardiPhoneTypeiPhone8Plus;
     }
     
     if ([deviceString isEqualToString:@"iPhone10,3"] || [deviceString isEqualToString:@"iPhone10,6"]) {
-        return YDiPhoneTypeiPhoneX;
+        return YDKeyboardiPhoneTypeiPhoneX;
     }
     
     if ([deviceString isEqualToString:@"iPhone11,8"]) {
-        return YDiPhoneTypeiPhoneXR;
+        return YDKeyboardiPhoneTypeiPhoneXR;
     }
     
     if ([deviceString isEqualToString:@"iPhone11,2"]) {
-        return YDiPhoneTypeiPhoneXS;
+        return YDKeyboardiPhoneTypeiPhoneXS;
     }
     
     if ([deviceString isEqualToString:@"iPhone11,6"] || [deviceString isEqualToString:@"iPhone11,4"]) {
-        return YDiPhoneTypeiPhoneXSMax;
+        return YDKeyboardiPhoneTypeiPhoneXSMax;
     }
     
-    return YDiPhoneTypeiPhoneNew;
+    return YDKeyboardiPhoneTypeiPhoneNew;
 }
 
 @end

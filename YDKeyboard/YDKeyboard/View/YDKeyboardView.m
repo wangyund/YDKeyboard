@@ -7,7 +7,7 @@
 //
 
 #import "YDKeyboardView.h"
-#import "YDDeviceTypes.h"
+#import "YDKeyboardDeviceTypes.h"
 #import "YDNumberKeyboardView.h"
 #import "YDAlphabetKeyboardView.h"
 #import "YDSymbolKeyboardView.h"
@@ -36,7 +36,7 @@
     if(UIDeviceOrientationIsLandscape(orientation)){
         frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 162);
     } else {
-        if ([YDDeviceTypes getiPhoneType] > 16) {
+        if ([YDKeyboardDeviceTypes getiPhoneType] > 16) {
             frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 299);
         } else {
             frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 255);

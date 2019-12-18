@@ -81,14 +81,14 @@
             break;
             
         default:
+            if (self.delegate && [self.delegate respondsToSelector:@selector(alphabetKeyboardViewTouchKey:)]) {
+                [self.delegate alphabetKeyboardViewTouchKey:[self.charList objectAtIndex:index]];
+            }
             if (self.keyboardLowTag) {
                 [self alphabetKeyboardViewChangeChar:self.keyboardLowTag];
                 self.keyboardLowTag = NO;
             }
             
-            if (self.delegate && [self.delegate respondsToSelector:@selector(alphabetKeyboardViewTouchKey:)]) {
-                [self.delegate alphabetKeyboardViewTouchKey:[self.charList objectAtIndex:index]];
-            }
             break;
     }
     
