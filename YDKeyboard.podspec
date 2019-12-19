@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'YDKeyboard'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.license  = 'MIT'
   s.summary  = 'A delightful iOS YDKeyboard framework.'
   s.homepage = 'https://github.com/wangyund/YDKeyboard'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   
   s.public_header_files = 'YDKeyboard/YDKeyboard/Header/*.{h}'
   s.source_files = 'YDKeyboard/YDKeyboard/Header/*.{h,m}'
-  s.resources_bundles = 'YDKeyboard/YDKeyboard/Resources/*.{png}'
+  s.resource_bundle = {'YDKeyboard' => 'YDKeyboard/YDKeyboard/Resources/*.{png}'}
   s.requires_arc = true
   s.frameworks = 'UIKit','Foundation'
 
