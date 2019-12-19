@@ -130,17 +130,13 @@
         
         if (i == 19) {
             NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-            NSString *path = [currentBundle pathForResource:@"keyboard_shift_key" ofType:@"png"];
+            NSString *path = [currentBundle pathForResource:@"keyboard_shift_key" ofType:@"png" inDirectory:@"YDKeyboard.bundle"];
             [button setImage:[[UIImage imageWithContentsOfFile:path] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
-            
-//            [button setImage:[[UIImage imageNamed:@"keyboard_shift_key"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         }
         if (i == 27) {
             NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-            NSString *path = [currentBundle pathForResource:@"keyboard_delete_key" ofType:@"png"];
+            NSString *path = [currentBundle pathForResource:@"keyboard_delete_key" ofType:@"png" inDirectory:@"YDKeyboard.bundle"];
             [button setImage:[[UIImage imageWithContentsOfFile:path] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
-            
-//            [button setImage:[[UIImage imageNamed:@"keyboard_delete_key"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         }
         if (i == 19 || i == 27 || i == 28 || i == 30) {
             [button setBackgroundImage:[UIImage yd_imageWithColor:[UIColor colorWithRed:170.0 / 255.0 green:178.0 / 255.0 blue:190.0 / 255.0 alpha:1.0]] forState:UIControlStateNormal];

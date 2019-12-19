@@ -74,10 +74,8 @@
         
         if (i == [kNumberList count] - 1) {
             NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-            NSString *path = [currentBundle pathForResource:@"keyboard_num_delete_key" ofType:@"png"];
+            NSString *path = [currentBundle pathForResource:@"keyboard_num_delete_key" ofType:@"png" inDirectory:@"YDKeyboard.bundle"];
             [button setImage:[[UIImage imageWithContentsOfFile:path] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
-            
-//            [button setImage:[[UIImage imageNamed:@"keyboard_num_delete_key"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         }
         if (i == 9 || i == 11) {
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
