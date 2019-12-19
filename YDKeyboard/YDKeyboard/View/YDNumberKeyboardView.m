@@ -73,10 +73,11 @@
         button.layer.masksToBounds = YES;
         
         if (i == [kNumberList count] - 1) {
-//            NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[YDNumberKeyboardView class]] pathForResource:@"YDKeyboard" ofType:@"bundle"]];
-//            [button setImage:[[UIImage imageWithContentsOfFile:[bundle pathForResource:@"keyboard_num_delete_key" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"keyboard_num_delete_key" ofType:@"png"];
+            [button setImage:[[UIImage imageWithContentsOfFile:path] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
             
-            [button setImage:[[UIImage imageNamed:@"keyboard_num_delete_key"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+//            [button setImage:[[UIImage imageNamed:@"keyboard_num_delete_key"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         }
         if (i == 9 || i == 11) {
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
