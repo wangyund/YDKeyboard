@@ -36,7 +36,7 @@
     if(UIDeviceOrientationIsLandscape(orientation)){
         frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 162);
     } else {
-        if ([YDKeyboardDeviceTypes getiPhoneType] > 16) {
+        if ([YDKeyboardDeviceTypes isSafeAreaInsets]) {
             frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 299);
         } else {
             frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 255);
